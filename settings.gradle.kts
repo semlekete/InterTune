@@ -10,6 +10,7 @@ dependencyResolutionManagement {
     mavenCentral()
     maven { setUrl("https://jitpack.io") }
 }
+}
 
 rootProject.name = "OuterTune"
 include(":app")
