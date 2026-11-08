@@ -3,10 +3,12 @@ dependencyResolutionManagement {
     repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
 
     repositories {
-        google()
-        mavenCentral()
-        maven { setUrl("https://jitpack.io") }
+    google()
+    maven {
+        url = uri("https://maven.wso2.org/nexus/content/repositories/central/")
     }
+    mavenCentral()
+    maven { setUrl("https://jitpack.io") }
 }
 
 rootProject.name = "OuterTune"
