@@ -7,8 +7,12 @@ plugins {
 buildscript {
     repositories {
         google()
+        maven {
+            url = uri("https://maven.wso2.org/nexus/content/repositories/central/")
+        }
         mavenCentral()
         maven { setUrl("https://jitpack.io") }
+    }
     }
     dependencies {
         classpath(libs.gradle)
